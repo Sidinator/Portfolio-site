@@ -90,6 +90,7 @@
 .utdanning{
     min-width: 300px;
     flex: 50%;
+    padding-left: 15px;
 }
 
 .erfaring{
@@ -109,7 +110,7 @@
 .portfolio{
     min-width: 300px;
     flex: 50%;
-    
+    padding-left: 15px;
 }
 
 .referanser{
