@@ -1,0 +1,136 @@
+.textcolor {
+    color: blue;
+    font-size: 20px;
+}
+
+#header {
+    display: block;
+    height: 30px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background: blue;
+    margin-top: 15px;
+}
+
+/* @media (max-width: 800px) {
+    .kontakt_info, .om-meg, .skills {
+        flex:100
+    }
+} */
+
+.box-size {
+    box-sizing: border-box;
+}
+
+.flex-div-one {
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+    /* width: 100vw; */
+    gap: 15px;
+    margin: 10px;
+    max-width: 100vw;
+}
+
+.navn {
+    flex-grow: 1;
+    min-width: 300px;
+}
+
+.bilde{
+    size: initial;
+}
+
+.kontakt_info {
+    font-size: 20px;
+    flex-grow: 1;
+    padding-left: 15px;
+    min-width: 400px;
+}
+
+.flex-div-two {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px;
+    max-width: 100vw;
+    gap: 10px;
+}
+
+
+.om-meg {
+    padding-left: 15px;
+    flex: 50%;
+    min-width: 400px;
+}
+
+.skills {
+    min-width: 300px;
+    flex: 50%;
+    max-width: min-content;
+}
+
+/* .flex-setting {
+    flex-grow: 1;
+    min-width: 300px;
+    padding-left: 15px;
+    flex: 50%
+} */
+
+
+.flex-div-three {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px;
+    max-width: 100vw;
+}
+
+.utdanning{
+    min-width: 300px;
+    flex: 50%;
+}
+
+.erfaring{
+    min-width: 300px;
+    /* flex: 50%; */
+    
+}
+
+.flex-div-four{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px;
+    max-width: 100vw;
+}
+
+.portfolio{
+    min-width: 300px;
+    flex: 50%;
+    
+}
+
+.referanser{
+    min-width: 300px;
+    /* flex: 50%; */
+    min-height: min-content;
+}
+
+.background_color {
+    background-color: red;
+    flex-grow: 1;
+}
+
+body {
+    background: black;
+    margin: 15px;
+}
+
+
+@media (max-width: 800px) {
+    .om-meg, .skills, .utdanning, .erfaring, .portfolio, .referanser {
+        flex:100
+    }
+}
