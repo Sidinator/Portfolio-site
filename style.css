@@ -12,13 +12,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--background);
 }
 
 .container{
-    background-color: var(--background);
     padding: 15px 15px;
     display: grid;
     place-items: center;
+    /* height: 100%; */
 }
 
 .profile{
@@ -58,7 +59,6 @@ p{
 
 .name{
     font-family: 'Poppins';
-    /* font-style: normal; */
     font-weight: 500;
     font-size: 32px;
     line-height: 48px;
@@ -73,8 +73,9 @@ p{
 
 .btn:hover{
     background-color: var(--btnhover);
-    color: var(--hovertxt);
+    color: var(--hovertxt)
 }
+
 
 .aboutme{
     text-align: center;
@@ -82,10 +83,9 @@ p{
     padding-top: 30px;
 }
 
+
 .profile-btn .btn{
     margin-top: 40px;
-    /* background: var(--btnstatic); */
-    /* color: var(--text); */
     width: 158px;
     height: 44px;
     text-align: center;
@@ -95,7 +95,6 @@ p{
 
 .tabs-btn{
     display: flex;
-    flex-direction: row;
     margin-top: 40px;
     width: 400px;
     height: 64px;
@@ -103,28 +102,25 @@ p{
     justify-content: center;
     align-items: center;
     gap: 9px;
-    padding: auto;
     border-radius: 10px;
-    /* border: 2px solid gray; */
     background-color: var(--btnstatic);
 }
 
-.tab-portifolio{
-    /* background-color: inherit; */
-    /* justify-self: center; */
-    /* color: var(--text); */
+.tabs-btn .btn{
     border: none;
     border-radius: 10px;
     width: 154px;
     height: 44px;
 }
 
-.tab-skills{
-    /* background-color: inherit; */
-    /* justify-self: center; */
-    /* color: var(--text); */
-    border: none;
-    border-radius: 10px;
-    width: 154px;
-    height: 44px;
+.img-projekt{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.img-skill{
+    display: none;
+    flex-direction: column;
+    width: 400px;
 }
