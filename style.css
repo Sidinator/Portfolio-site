@@ -126,6 +126,7 @@ p {
   gap: 9px;
   border-radius: 10px;
   background-color: var(--btnstatic);
+  margin-bottom: 0.5rem;
 }
 
 .tabs-btn .btn {
