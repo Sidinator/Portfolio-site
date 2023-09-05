@@ -6,6 +6,7 @@
     --background: #2B303A;
     --black: #0C151D;
     --hovertxt: #3D3D3D;
+    --main-font: 'Poppins', sans-serif;
 }
 
 *{
@@ -15,16 +16,27 @@
     background-color: var(--background);
 }
 
+body {
+    background-color: var(--background);
+    color: var(--textmain);
+    font-family: var(--main-font);
+    min-height: 100vh;
+    min-height: 100svh;
+}
+
 .container{
-    padding: 15px 15px;
-    display: grid;
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
     place-items: center;
     /* height: 100%; */
 }
-
+/* =================
+======profile img====== 
+====================*/
 .profile{
-    width: 124px;
-    height: 124px;
+    width: 10rem;
+    height: 10rem;
     background-image: url(./imgs/Ingmar2.png);
     background-size:contain;
     background-position: center;
@@ -50,9 +62,7 @@ p{
     color: var(--text);
 }
 
-.aboutme h2{
-    font-style: normal;
-    font-weight: 500;
+.aboutme h3{
     font-size: 16px;
     line-height: 24px;
 }
@@ -62,7 +72,7 @@ p{
     font-weight: 500;
     font-size: 32px;
     line-height: 48px;
-    color: var(--textmain);
+    color: var(--textmain)
 }
 
 
@@ -83,6 +93,12 @@ p{
     padding-top: 30px;
 }
 
+.aboutme-long {
+    display: show;
+}
+.aboutme-short{
+    display: none;
+}
 
 .profile-btn .btn{
     margin-top: 40px;
@@ -115,12 +131,63 @@ p{
 
 .img-projekt{
     display: flex;
-    flex-direction: column;
-    width: 400px;
+    /* flex-direction: row; */
+    flex-flow: row wrap;
+    width: 25rem;
+}
+.img-projekt > img {
+    width: 12.5rem;
 }
 
 .img-skill{
-    display: none;
-    flex-direction: column;
-    width: 400px;
+    display: none;  
+}
+ul {
+    column-count: 2;
+}
+
+/* =================
+======Mobile view====== 
+====================*/
+
+
+@media screen and (max-width: 400px) {
+    * {
+        max-width: 100vw;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* .container {
+        display: flex;
+        align-items: center;
+        flex-shrink: auto;
+    } */
+    #aboutme-long{
+        display: none;
+    }
+    #aboutme-short{
+        display: flex;
+    }
+    .profile{
+        width: 10rem;
+        height: 10rem;
+    }
+    .profile-btn .btn{
+        margin-top: 3rem;
+        width: 30svw;
+        height: 12svw;
+    }
+    .tabs-btn{
+        margin-top: 1.3rem;   
+        max-width: 70svw;
+    }
+    .img-projekt {
+        max-width: 70svw;
+        
+    }
+    .img-skill{
+        max-width: 70svw;
+    }
 }
