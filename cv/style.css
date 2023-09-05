@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  margin-top: 1rem;
+}
+
+table th {
+  width: 25svw;
+  text-align: left;
+  vertical-align: text-top;
+}
+
+.arbeidserfaring {
+  padding-top: 1rem;
+}
